@@ -1,4 +1,5 @@
-# avaloq-assessment
+# Avaloq Assessment
+
 ## Full Stack Developer- Mobile Banking Avaloq Assessment
 
 ### FizzBuzz in Java
@@ -44,7 +45,7 @@ Then, navigate to the RockPaperScissors directory and run the following command
 tsc
 ```
 It has been configured to build and run the respective js file. 
-Finally, open the index.html file by either using an extension (such as Go Live on VSCode), or by simple navigating to the directroy where the index.html file is. Then
+Finally, open the index.html file by either using an extension (such as Go Live on VSCode), or by simple navigating to the directroy where the index.html file is located. Then
 ```
 right-click -> Open with... -> Your default browser
 ```
