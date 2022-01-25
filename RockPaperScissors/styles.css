@@ -1,0 +1,200 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #121212;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.score-board {
+  border: 4px solid #fff;
+  width: 300px;
+  margin: 40px auto;
+  font-size: 40px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.score-area {
+  width: 400px;
+  margin: 40px auto;
+  font-size: 40px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.score-title {
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: -30px;
+}
+
+#user-label {
+  color: green;
+  font-weight: bolder;
+}
+
+#user-score {
+  margin: 0 50px 0 0;
+}
+
+#computer-score {
+  margin: 0 0 0 50px;
+}
+
+#computer-label {
+  color: red;
+  font-weight: bolder;
+}
+
+.badge {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 5px 3px;
+}
+
+#user-label {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  transform: translate(-10%, -50%);
+}
+
+#computer-label {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  transform: translate(10%, -50%);
+}
+
+.result {
+  font-weight: 300;
+  text-align: center;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.result {
+  line-height: 50px;
+}
+
+.choices {
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.choice {
+  display: inline-block;
+  /* border: 3px solid #fff; */
+  border-radius: 50%;
+  padding: 15px;
+  margin: auto 20px;
+  transition: all 1s ease;
+}
+
+.choice:hover {
+  background-color: rgba(81, 136, 238, 0.329);
+  cursor: pointer;
+}
+
+#action-message {
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 40px 0;
+}
+
+.winningStyles {
+  border: 3px solid #4dcc7d;
+  background-color: #043507;
+  box-shadow: 0 0 20px #043507;
+}
+
+.losingStyles {
+  border: 3px solid #c52e2e;
+  background-color: #2e0303;
+  box-shadow: 0 0 20px #2e0303;
+}
+
+.drawStyles {
+  border: 3px solid #444;
+  background-color: rgba(219, 163, 58, 0.849);
+  box-shadow: 0 0 20px #222;
+}
+
+#countdown-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#countdown {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.897);
+  color: black;
+  padding: 30px;
+  border-radius: 5px;
+  width: 500px;
+  max-width: 100%;
+  text-align: center;
+}
+
+#countdown p {
+  font-size: 32px;
+}
+
+#countdown-container.show {
+  opacity: 1;
+  /* pointer-events: 1; */
+}
+
+#restart-button {  
+  opacity: 0;
+  padding: 1%;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: none;
+  transition: all .5s ease;
+
+}
+
+#restart-button.show {  
+  background-color: beige;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#restart-button.show:hover {
+  background-color: #121212;
+  color: #fff;
+  border: solid 2px beige;
+}

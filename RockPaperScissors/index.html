@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="https://www.emojiall.com/en/header-svg/%F0%9F%95%B9.svg">
+
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="score-area">
+      <div id="user-label" class="badge">Player</div>
+      <div id="computer-label" class="badge">Computer</div>
+      <span id="user-score">0</span> : <span id="computer-score">0</span>
+    </div>
+
+    <div class="result"><p>Paper covers rock. You win!</p></div>
+
+    <div class="choices">
+      <div id="rock" class="choice">
+        <span style="font-size: 70px">&#128074;</span>
+      </div>
+      <div id="paper" class="choice">
+        <span style="font-size: 70px">&#129306;</span>
+      </div>
+      <div id="scissors" class="choice">
+        <span style="font-size: 70px">&#9996;</span>
+      </div>
+
+      <p id="action-message"></p>
+
+      <div id="restart-container">
+          <button id="restart-button">Restart Game</button>
+      </div>
+      <div id="countdown-container">
+        <div id="countdown"></div>
+      </div>
+    </div>
+
+    <script src="js/game.js" type="text/javascript"></script>
+  </body>
+</html>
