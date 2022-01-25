@@ -3,9 +3,9 @@
 ## Full Stack Developer- Mobile Banking Avaloq Assessment
 
 ### Cloning the Repository
-In terminal, navigate the current directory to the location where you want the cloned directory. Type the following
+In terminal, navigate your current directory to the location where you would like the cloned directory. Type the following
 ```git clone```
-followed by paste of the repository link that can be found on the green button labeled Code (top-right).
+followed by pasting the repository link that can be copied via the green button labeled Code (top-right).
 
 ### FizzBuzz in Java
 To run, please ensure you have the lastest verion of Java JDK installed. You may navigate to https://www.oracle.com/java/technologies/downloads/ and install.
